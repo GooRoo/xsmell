@@ -14,9 +14,10 @@
 #include <boost/mpl/push_back.hpp>
 #include <boost/mpl/pop_back.hpp>
 #include <boost/mpl/back.hpp>
-#include <boost/type_traits/is_same.hpp>
 #include <boost/mpl/empty.hpp>
+#include <boost/type_traits/is_same.hpp>
 #include <boost/lexical_cast.hpp>
+#include <boost/static_assert.hpp>
 
 namespace xsmell
 {
