@@ -12,22 +12,24 @@ Well no more! With the advent of XSMELL you can now use regular XML syntax
 directly in your source code, thanks to the reckless use of operator 
 overloading, template meta-programming and preprocessor macros:
 
-  using namespace xsmell;
+```cpp
+using namespace xsmell;
 
-  document doc = 
-      _
-      <html>_
-          <head>_
-              <title>"XSMELL demo"<!title>_
-          <!head>_
-          <body>_
-              <p>"Yesssssssssssssssss!"<!p>_
-              <img .src("chucknorris.png") .alt("sneezing eyes open")>_ <!img>_
-          <!body>_
-      <!html>
-      _;
+document doc = 
+	_
+	<html>_
+		<head>_
+			<title>"XSMELL demo"<!title>_
+		<!head>_
+		<body>_
+			<p>"Yesssssssssssssssss!"<!p>_
+			<img .src("chucknorris.png") .alt("sneezing eyes open")>_ <!img>_
+		<!body>_
+	<!html>
+	_;
 
-  std::cout << doc << '\n';
+std::cout << doc << '\n';
+```
 
 That's right! Thanks to XSMELL you'll no longer suffer from S-Expression
 envy. You've got one up on those Lisp guys now -- smug bastards!
